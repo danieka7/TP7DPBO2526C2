@@ -1,0 +1,2 @@
+# Paksa GitHub Linguist mengenali seluruh file .php sebagai PHP (bukan Hack)
+*.php linguist-language=PHP
