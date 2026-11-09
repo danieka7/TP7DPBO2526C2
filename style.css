@@ -377,3 +377,6 @@ footer p {
 .mb-20 {
   margin-bottom: 20px;
 }
+
+/* Pesan error aksi (ditampilkan oleh index.php) */
+.error { color: #b00020; }

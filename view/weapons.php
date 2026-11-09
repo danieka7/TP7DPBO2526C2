@@ -8,6 +8,7 @@
         <th>Manufacturer</th>
         <th>Model Code</th>
         <th>Stock</th>
+        <th>Action</th>
     </tr>
     <?php foreach ($weapon->getAllWeapons() as $w): ?>
     <tr>
@@ -18,11 +19,16 @@
         <!-- Stok <= 2 diberi kelas "stock-low" (merah) dan teks (low),
              agar penanda tidak hanya bergantung pada warna -->
         <td class="<?= $w['stock'] <= 2 ? 'stock-low' : '' ?>"><?= $w['stock'] ?><?= $w['stock'] <= 2 ? ' (low)' : '' ?></td>
+        <td>
+            <!-- Edit: membuka form dengan id; Delete: diproses di index.php -->
+            <a href="?page=weapon_form&id=<?= $w['id'] ?>">Edit</a>
+            <a href="?page=weapons&delete_weapon=<?= $w['id'] ?>" onclick="return confirm('Hapus senjata ini?')">Delete</a>
+        </td>
     </tr>
-
     <?php endforeach; ?>
 </table>
 
-<button class="add-button">
+<!-- Tombol Add membuka form tanpa id (mode tambah) -->
+<button class="add-button" onclick="location.href='?page=weapon_form'">
     + Add Weapon
 </button>

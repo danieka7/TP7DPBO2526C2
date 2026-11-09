@@ -34,10 +34,10 @@ CREATE TABLE transactions (
 );
 
 INSERT INTO weapons (name, manufacturer, model_code, stock) VALUES
-('Viper MK-II', 'Ironclad Works', 'WPN01', 5),
-('Falcon S9', 'Northgate Arms', 'WPN0000000002', 3),
-('Bulwark R4', 'Ironclad Works', 'WPN0000000003', 4),
-('Sentinel X1', 'Redfield Armory', 'WPN0000000004', 2);
+('Viper MK-II', 'Ironclad Works', 'W001', 5),
+('Falcon S9', 'Northgate Arms', 'W002', 3),
+('Bulwark R4', 'Ironclad Works', 'W003', 4),
+('Sentinel X1', 'Redfield Armory', 'W004', 2);
 
 INSERT INTO buyers (name, email, phone) VALUES
 ('Garnisun Alpha', 'alpha@garnisun.test', '08123456789'),

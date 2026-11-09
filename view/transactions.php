@@ -23,6 +23,9 @@
                 <!-- Tautan GET ?return=ID diproses di index.php -->
                 <a href="?page=transactions&return=<?= $t['id'] ?>">Return</a>
             <?php endif; ?>
+            <!-- Edit: membuka form dengan id; Delete: diproses di index.php -->
+            <a href="?page=transaction_form&id=<?= $t['id'] ?>">Edit</a>
+            <a href="?page=transactions&delete_transaction=<?= $t['id'] ?>" onclick="return confirm('Hapus transaksi ini?')">Delete</a>
         </td>
     </tr>
     <?php endforeach; ?>
@@ -43,5 +46,5 @@
             <option value="<?= $b['id'] ?>"><?= $b['name'] ?></option>
         <?php endforeach; ?>
     </select>
-    <button type="submit" name="dispatch">Dispatch</button>
+    <button type="submit" name="dispatch" class="add-button">Dispatch</button>
 </form>

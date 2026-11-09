@@ -7,6 +7,7 @@
         <th>Name</th>
         <th>Email</th>
         <th>Phone</th>
+        <th>Action</th>
     </tr>
     <?php foreach ($buyer->getAllBuyers() as $b): ?>
     <tr>
@@ -14,10 +15,14 @@
         <td><?= $b['name'] ?></td>
         <td><?= $b['email'] ?></td>
         <td><?= $b['phone'] ?></td>
+        <td>
+            <a href="?page=buyer_form&id=<?= $b['id'] ?>">Edit</a>
+            <a href="?page=buyers&delete_buyer=<?= $b['id'] ?>" onclick="return confirm('Hapus pembeli ini?')">Delete</a>
+        </td>
     </tr>
     <?php endforeach; ?>
 </table>
 
-<button class="add-button">
+<button class="add-button" onclick="location.href='?page=buyer_form'">
     + Add Buyer
 </button>
