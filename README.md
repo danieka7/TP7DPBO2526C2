@@ -38,26 +38,31 @@ Program ini bertema sistem manajemen gudang & distribusi persenjataan administra
 ## Struktur Projek
 
 ```
-.
-├── class
-│   ├── Buyer.php            
-│   ├── Transaction.php    
-│   └── Weapon.php   
-├── config
-│   └── db.php            
-├── database
-│   └── db_armory.sql       
-├── view
-│   ├── buyer_form.php       
-│   ├── buyers.php      
-│   ├── footer.php           
-│   ├── header.php           
-│   ├── transaction_form.php 
-│   ├── transactions.php     
-│   ├── weapon_form.php      
-│   └── weapons.php          
-├── index.php                
-└── style.css                
+TP7DPBO2526C2
+├── dokumentasi
+│   ├── crud.mp4
+│   └── diagram.png
+├── program
+│   ├── class
+│   │   ├── Buyer.php
+│   │   ├── Transaction.php
+│   │   └── Weapon.php
+│   ├── config
+│   │   └── db.php
+│   ├── database
+│   │   └── db_armory.sql
+│   ├── view
+│   │   ├── buyer_form.php
+│   │   ├── buyers.php
+│   │   ├── footer.php
+│   │   ├── header.php
+│   │   ├── transaction_form.php
+│   │   ├── transactions.php
+│   │   ├── weapon_form.php
+│   │   └── weapons.php
+│   ├── index.php
+│   └── style.css
+└── README.md
 ```
 
 ## Skema Tabel & Relasi
