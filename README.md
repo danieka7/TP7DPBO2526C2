@@ -147,3 +147,4 @@ INSERT INTO buyers (name, email, phone) VALUES
 
 
 ## Dokumentasi
+https://github.com/user-attachments/assets/f0ef8ac1-2e9a-4157-a550-223867c07ddf
